@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AVINHA - EX01</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #eef2f7;
+    }
+
+    .sidebar,
+    .offcanvas {
+      background-color: #111827;
+    }
+
+    .sidebar .nav-link,
+    .offcanvas .nav-link {
+      color: #d1d5db;
+      border-radius: 12px;
+      padding: 12px 15px;
+      margin-bottom: 8px;
+    }
+
+    .sidebar .nav-link:hover,
+    .sidebar .nav-link.active,
+    .offcanvas .nav-link:hover,
+    .offcanvas .nav-link.active {
+      background-color: #2563eb;
+      color: #fff;
+    }
+
+    .card {
+      border: 0;
+      border-radius: 18px;
+    }
+
+    .btn {
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR MOBILE -->
+  <nav class="navbar navbar-light bg-white shadow-sm d-lg-none">
+    <div class="container-fluid">
+      <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+        <i class="bi bi-list fs-4"></i>
+      </button>
+
+      <span class="navbar-brand fw-bold mb-0">
+        AVINHA
+      </span>
+    </div>
+  </nav>
+
+  <!-- MENU MOBILE -->
+  <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="menuLateral">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">
+        <i class="bi bi-mortarboard"></i> AVINHA
+      </h5>
+      <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <nav class="nav flex-column">
+        <a class="nav-link active" href="#"><i class="bi bi-house me-2"></i> Início</a>
+        <a class="nav-link" href="exercicio01.html"><i class="bi bi-pencil-square me-2"></i> Exercício 1</a>
+        <a class="nav-link" href="#"><i class="bi bi-pencil-square me-2"></i> Exercício 2</a>
+        <a class="nav-link" href="#"><i class="bi bi-pencil-square me-2"></i> Exercício 3</a>
+        <a class="nav-link" href="#"><i class="bi bi-bar-chart me-2"></i> Progresso</a>
+        <a class="nav-link" href="#"><i class="bi bi-bell me-2"></i> Avisos</a>
+        <a class="nav-link" href="index.html"><i class="bi bi-box-arrow-right me-2"></i> Sair</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- SIDEBAR DESKTOP -->
+      <aside class="col-lg-3 col-xl-2 sidebar text-white min-vh-100 p-4 d-none d-lg-block">
+
+        <h4 class="fw-bold mb-4">
+          <i class="bi bi-mortarboard"></i> AVINHA
+        </h4>
+
+        <nav class="nav flex-column">
+          <a class="nav-link active" href="#"><i class="bi bi-house me-2"></i> Início</a>
+          <a class="nav-link" href="./ex01/exercicio01.html"><i class="bi bi-pencil-square me-2"></i> Exercício 1</a>
+          <a class="nav-link" href="#"><i class="bi bi-pencil-square me-2"></i> Exercício 2</a>
+          <a class="nav-link" href="#"><i class="bi bi-pencil-square me-2"></i> Exercício 3</a>
+        </nav>
+
+        <hr class="text-secondary">
+
+        <a class="nav-link" href="index.html">
+          <i class="bi bi-box-arrow-right me-2"></i> Sair
+        </a>
+
+      </aside>
+
+      <!-- CONTEÚDO -->
+      <main class="col-lg-9 col-xl-10 p-4 p-lg-5">
+
+        <!-- TOPO -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h1 class="h3 fw-bold mb-1">Olá, aluno(a)! 👋</h1>
+            <p class="text-muted mb-0">Bem-vindo(a) ao seu ambiente virtual de aprendizagem.</p>
+          </div>
+
+          <div class="d-none d-md-flex align-items-center">
+            <div class="text-end me-3">
+              <strong>Aluno Senac</strong>
+              <div class="text-muted small">Lógica de Programação</div>
+            </div>
+
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+              style="width: 48px; height: 48px;">
+              <i class="bi bi-person fs-4"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARDS RESUMO -->
+        <div class="row g-4 mb-4">
+
+          <div class="col-md-6 col-xl-3">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <div class="text-primary fs-2 mb-2">
+                  <i class="bi bi-journal-code"></i>
+                </div>
+                <h5 class="card-title">8</h5>
+                <p class="text-muted mb-0">Exercícios</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <div class="text-success fs-2 mb-2">
+                  <i class="bi bi-check-circle"></i>
+                </div>
+                <h5 class="card-title">2</h5>
+                <p class="text-muted mb-0">Concluídos</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <div class="text-warning fs-2 mb-2">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <h5 class="card-title">6</h5>
+                <p class="text-muted mb-0">Pendentes</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <div class="text-danger fs-2 mb-2">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h5 class="card-title">8,5</h5>
+                <p class="text-muted mb-0">Nota atual</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BANNER -->
+        <div class="card bg-primary text-white shadow-sm mb-4">
+          <div class="card-body p-4">
+            <div class="row align-items-center">
+              <div class="col-md-8">
+                <h2 class="h4 fw-bold">Continue seus estudos</h2>
+                <p class="mb-0">
+                  Acesse os exercícios, acompanhe seu progresso e pratique os conteúdos vistos em aula.
+                </p>
+              </div>
+
+              <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                <a href="exercicio01.html" class="btn btn-light">
+                  Começar agora
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXERCÍCIOS -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h5 fw-bold mb-0">Meus exercícios</h2>
+          <a href="#" class="text-decoration-none">Ver todos</a>
+        </div>
+
+        <div class="row g-4 mb-4">
+
+          <div class="col-md-6 col-xl-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <div class="text-primary fs-2 mb-3">
+                  <i class="bi bi-person-plus"></i>
+                </div>
+
+                <h5 class="card-title">Exercício 01</h5>
+                <p class="text-muted">Cadastro de Pessoa com formulário em Bootstrap.</p>
+
+                <span class="badge bg-success mb-3">Concluído</span>
+
+                <div class="d-grid">
+                  <a href="exercicio01.html" class="btn btn-outline-primary">
+                    Acessar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <div class="text-primary fs-2 mb-3">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+
+                <h5 class="card-title">Exercício 02</h5>
+                <p class="text-muted">Cadastro de Curso usando grid e componentes Bootstrap.</p>
+
+                <span class="badge bg-warning text-dark mb-3">Em andamento</span>
+
+                <div class="d-grid">
+                  <a href="#" class="btn btn-outline-primary">
+                    Acessar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <div class="text-primary fs-2 mb-3">
+                  <i class="bi bi-box-seam"></i>
+                </div>
+
+                <h5 class="card-title">Exercício 03</h5>
+                <p class="text-muted">Cadastro de Produto com cards, tabela e botões.</p>
+
+                <span class="badge bg-secondary mb-3">Não iniciado</span>
+
+                <div class="d-grid">
+                  <a href="#" class="btn btn-outline-primary">
+                    Acessar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PROGRESSO E AVISOS -->
+        <div class="row g-4">
+
+          <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="bi bi-bar-chart text-primary"></i> Meu progresso
+                </h5>
+
+                <p class="text-muted">Você concluiu 25% das atividades.</p>
+
+                <div class="progress mb-3" style="height: 12px;">
+                  <div class="progress-bar" style="width: 25%"></div>
+                </div>
+
+                <small class="text-muted">2 de 8 exercícios concluídos.</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="bi bi-bell text-primary"></i> Avisos
+                </h5>
+
+                <div class="alert alert-primary py-2 mb-2">
+                  Entrega do Exercício 02 até sexta-feira.
+                </div>
+
+                <div class="alert alert-warning py-2 mb-0">
+                  Revise os conceitos de grid antes da próxima aula.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
